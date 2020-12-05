@@ -1,29 +1,83 @@
 <template>
   <div id="app">
-
-    <componente-nav></componente-nav>
-
-    <!-- v-for="(item,index) of team" :key="index" -->
-
-    <!-- <team-card v-bind:member="item"></team-card> -->
-
+    <header>
+      <ComponenteBanner></ComponenteBanner>
+    </header>
+    <main>
+      <section id="team">
+        <div class="container-fluid">
+          <div class="row justify-content-center mb-5">
+            <div class="col mt-5 w-50" v-for="(item,index) of team" :key="index">
+              <team-card v-bind:member="item"></team-card>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- v-for="(item,index) of team" :key="index" -->      
+    </main>
   </div>
 </template>
 
 <script>
-
-// import TeamCard from "./components/TeamCard.vue"
-import ComponenteNav from "./components/ComponenteNav.vue"
+import TeamCard from "./components/TeamCard.vue";
+import ComponenteBanner from "./components/ComponenteBanner.vue";
 // import ComponenteApi from "./components/ComponenteApi.vue"
 
 export default {
-  name: 'App',
-  components:{
-    // TeamCard,
-    ComponenteNav
+  name: "App",
+  components: {
+    TeamCard,
+    ComponenteBanner,
     // ComponenteApi,
   },
-  team: []
-}
+  data(){
+    return{
+      team: [
+    {
+      codigo: 1,
+      nombre: "Andrés C Torres",
+      descripcion: "Estudiante de Ing. Sistemas Cooperativa",
+      rol: "Desarrollador Backend",
+      image: "",
+    },
+    {
+      codigo: 2,
+      nombre: "Javier C. Laiton",
+      descripcion: "Ing. industrial egresado de Fundacion Universitaria CAFAM",
+      rol: "Desarrollador Backend",
+      image: "",
+    },
+    {
+      codigo: 3,
+      nombre: "Mayra Erazo",
+      descripcion: "Biologa egresada de Universidad del Valle",
+      rol: "Desarrollador Desarrollador Frontend",
+      image: "",
+    },
+    {
+      codigo: 4,
+      nombre: "José Olarte",
+      descripcion: "Economista egresado de la Universidad de Cartagena",
+      rol: "Desarrollador Backend",
+      image: "",
+    },
+    {
+      codigo: 5,
+      nombre: "Iván González",
+      descripcion: "Ingeniero Electronico egresado de la Universidad del Norte",
+      rol: "Desarrollador Frontend",
+      image: "",
+    },
+    {
+      codigo: 6,
+      nombre: "Julian Manrique",
+      descripcion: "Ingeniero Quimico egresado de la Universidad Nacional",
+      rol: "Desarrollador Frontend",
+      image: "",
+    },
+  ],
+    }
+  }
+};
 </script>
 
