@@ -17,6 +17,9 @@
           </div>
         </div>
       </section>
+      <section id="news">
+        <componente-api></componente-api>
+      </section>
       <section id="team">
         <div class="container-fluid">
           <div class="row justify-content-center mb-5">
@@ -29,9 +32,6 @@
             </div>
           </div>
         </div>
-      </section>
-      <section>
-        <componente-api></componente-api>
       </section>
       <!-- v-for="(item,index) of team" :key="index" -->
     </main>
