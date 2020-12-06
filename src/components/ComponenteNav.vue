@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-success ">
         <a class="navbar-brand " href="# ">
-        <img src="https://image.flaticon.com/icons/png/512/323/323329.png" width="50 " height="50
+        <img :src="require('../assets/reino-unido.png')" width="50 " height="50
         " class="d-inline-block align-center mr-2" alt="Logo" loading="lazy"><span class="font-weight-bold">LANGUAGE
             MASTER</span>
         </a>
@@ -17,9 +17,6 @@
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link h5 font-weight-bold" href="#services">Services</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link h5 font-weight-bold" href="#movies">Movies</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link h5 font-weight-bold" href="#news">News</a>
