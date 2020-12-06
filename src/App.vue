@@ -35,6 +35,9 @@
       </section>
       <!-- v-for="(item,index) of team" :key="index" -->
     </main>
+    <footer class="page-footer bg-success text-white pt-2">
+      <component-footer></component-footer>
+    </footer>
   </div>
 </template>
 <script>
@@ -42,6 +45,7 @@ import TeamCard from "./components/TeamCard.vue";
 import ComponenteBanner from "./components/ComponenteBanner.vue";
 import ComponenteApi from './components/ComponenteApi.vue';
 import ComponenteServicios from "./components/ComponenteServicios.vue";
+import componentFooter from './components/componentFooter.vue'
 
 export default {
   name: "App",
@@ -49,7 +53,8 @@ export default {
     TeamCard,
     ComponenteBanner, 
     ComponenteApi,
-    ComponenteServicios },
+    ComponenteServicios,
+    componentFooter },
   data(){
     return{
       team: [
@@ -103,7 +108,7 @@ export default {
           boton:"Translator>>",
           url:"https://www.deepl.com/translator"
 
-        },
+        }, 
         {
           titulo: "ENGLISH COURSE",
           descripcion: "Aprender inglés te abre muchas puertas, entra al sitio y aprende cosas de este idioma mundial.",
