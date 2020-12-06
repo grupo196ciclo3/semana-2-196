@@ -1,11 +1,7 @@
 <template>    
     <div class="card text-white h-100" v-bind:class="member.codigo % 2 === 0? 'bg-dark': 'bg-danger'" role="alert">
         <div class="d-flex justify-content-center align-center p-2">
-            <img
-            :src="member.imagen"
-            alt="Foto Miembro"
-            class="img-fluid w-50"
-            />
+            <img v-bind:src="member.image" alt="Foto Miembro" class="img-fluid w-50"/>
         </div>
         <div class="card-body">
             <h5 class="card-title text-center">{{member.nombre}}</h5>

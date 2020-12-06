@@ -38,7 +38,7 @@ export default {
       nombre: "Andrés C Torres",
       descripcion: "Estudiante de Ing. Sistemas Cooperativa",
       rol: "Desarrollador Backend",
-      image: "",
+      image: require("./assets/logo.png"),
     },
     {
       codigo: 2,
